@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JoInCp</title>
+  <link rel="stylesheet" type="text/css" href="src/public/css/index.css">
+</head>
+<body>
+  <div class="container">
+    <h1>선생님의 자리를 찾아보세요!</h1>
+    <h3>검색후 이름 클릭시 지도가 나옵니다.</h3>
+
+    <div class="search">
+      <input type="text" id="searchInput" placeholder="과목 또는 이름을 입력하세요">
+      <button onclick="search()">검색</button>
+    </div>
+
+    <div id="searchResult"></div>
+    
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalImage">
+    </div>
+    
+    <script src="src/public/js/index.js"></script>
+  </div>
+</body>
+</html>
